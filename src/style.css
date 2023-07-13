@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+}
+h1{
+  text-align: center;
+}
+aside.sideContent{
+    width: 25%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    margin: 10px;
+    background-color: lightgray;
+    text-align: center;
+  }
+  .encrypt{
+    display: none;
+    clear:both;
+    background-color: red;
+    width: 73%;
+    margin:10px;
+    text-align: center;
+  }
+  .decrypt{
+    display: none;
+    clear:both;
+    background-color: red;
+    width: 73%;
+    margin:10px;
+    text-align: center;
+  }
+  #headerContent{
+    top: 0;
+    left: 0;
+    margin:10px;
+    background-color: red;
+    width: 73%;
+    text-align: center;
+  }

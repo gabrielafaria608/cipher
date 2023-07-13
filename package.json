@@ -10,7 +10,8 @@
     "test": "jest --verbose --coverage",
     "open-coverage-report": "opener ./coverage/lcov-report/index.html",
     "start": "serve ./src",
-    "deploy": "gh-pages -d src"
+    "deploy": "gh-pages -d src",
+    "gitconfig": "git config --local user.name \"Gabriela Faria\" && git config --local user.email \"gabriela.faria806@gmail.com\""
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",

@@ -6,9 +6,67 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
+    <header id="headerContent">
+      <h1>BEM VINDA A FOFOCA DE CAESAR</h1>
+      <button id="btnShowEncrypt">CRIPTOGRAFAR</button>
+      <br>
+      <button id="btnShowDecrypt">DESCRIPTOGRAFAR</button>
+    </header>
+    <main id="root">
+      <article class="encrypt">
+        <header>CRIPTOGRAFAR</header>
+        <form id="formEncrypt">
+          <label for="gossipEncrypt">Fofoca:</label>
+          <input type="text" id="gossipEncrypt" required>
+          <br>
+          <label for="displacementNumberEncrypt">Selecione o deslocamento:</label>
+          <select name="displacementNumberEncrypt" id="displacementNumberEncrypt">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <br>
+          <button type="submit" id="btnEncrypt">CRIPTOGRAFAR</button>
+        </form>
+        <div id="encryptGossip">Fofoca criptografada</div>
+      </article>      
+      <article class="decrypt">
+        <header>DESCRIPTOGRAFAR</header>
+        <form id="formDecrypt">
+          <label for="gossipDecrypt">Fofoca:</label>
+          <input type="text" id="gossipDecrypt" required>
+          <br>
+          <label for="displacementNumberEncrypt">Selecione o deslocamento:</label>
+          <select name="displacementNumberDecrypt" id="displacementNumberDecrypt">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <button type="submit" id="btnDecrypt">DESCRIPTOGRAFAR</button>
+        </form>
+        <div id="encryptGossip">Fofoca descriptografada</div>
+      </article>
+      <aside class="sideContent">
+        <h1>imagem do caesar</h1>
+        <p>Criado em homenagem ao maior fofoqueiro do seu milênio o cara sabia transmitir mensagens de maneira secreta! Pra prevenir você e suas amigas de não apanharem na rua por falar mal dos outros no twitter. 
+          Secretíssimasss</p>
+      </aside>
+    </main>
+    <footer>
+
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
