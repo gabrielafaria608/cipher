@@ -1,72 +1,59 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header id="headerContent">
-      <h1>BEM VINDA A FOFOCA DE CAESAR</h1>
-      <button id="btnShowEncrypt">CRIPTOGRAFAR</button>
-      <br>
-      <button id="btnShowDecrypt">DESCRIPTOGRAFAR</button>
-    </header>
-    <main id="root">
-      <article class="encrypt">
-        <header>CRIPTOGRAFAR</header>
-        <form id="formEncrypt">
-          <label for="gossipEncrypt">Fofoca:</label>
-          <input type="text" id="gossipEncrypt" required>
-          <br>
-          <label for="displacementNumberEncrypt">Selecione o deslocamento:</label>
-          <select name="displacementNumberEncrypt" id="displacementNumberEncrypt">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-          </select>
-          <br>
-          <button type="submit" id="btnEncrypt">CRIPTOGRAFAR</button>
-        </form>
-        <div id="encryptGossip">Fofoca criptografada</div>
-      </article>      
-      <article class="decrypt">
-        <header>DESCRIPTOGRAFAR</header>
-        <form id="formDecrypt">
-          <label for="gossipDecrypt">Fofoca:</label>
-          <input type="text" id="gossipDecrypt" required>
-          <br>
-          <label for="displacementNumberEncrypt">Selecione o deslocamento:</label>
-          <select name="displacementNumberDecrypt" id="displacementNumberDecrypt">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-          </select>
-          <button type="submit" id="btnDecrypt">DESCRIPTOGRAFAR</button>
-        </form>
-        <div id="encryptGossip">Fofoca descriptografada</div>
-      </article>
-      <aside class="sideContent">
-        <h1>imagem do caesar</h1>
-        <p>Criado em homenagem ao maior fofoqueiro do seu milênio o cara sabia transmitir mensagens de maneira secreta! Pra prevenir você e suas amigas de não apanharem na rua por falar mal dos outros no twitter. 
-          Secretíssimasss</p>
-      </aside>
-    </main>
-    <footer>
-
-    </footer>
-    <script src="index.js" type="module"></script>
-  </body>
-</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Cipher</title>
+    </head>
+    <body>
+        <header class="headerContent">
+            <div class="text">
+                <h1>BEM VINDA A FOFOCA SECRETA</h1>
+                <a href="#encrypt" id="btnShowEncrypt" class="showButtons">CRIPTOGRAFAR</a>
+                <br>
+                <a href="#decrypt" class="showButtons" id="btnShowDecrypt">DESCRIPTOGRAFAR</a>
+            </div>
+            <div class="image">
+                <img src="art.png" alt="Your Image">
+            </div>
+          </header>
+      <div class="container">
+        <main id="root">
+            <article id="encrypt" class="cipher">
+            <div class="form" id="formEncrypt">
+              <header><h1>CRIPTOGRAFAR</h1></header>
+              <form>
+                <label for="gossipEncrypt">Fofoca:</label>
+                <input type="text" id="gossipEncrypt" class="inputGossip" required>
+                <br>
+                <label for="displacementNumberEncrypt">Selecione o deslocamento:</label>
+                <input type="number" value="1" name="displacementNumberEncrypt" id="displacementNumberEncrypt" class="inputDisplacement" max="33" min="1">
+                <br>
+                <button type="submit" id="btnEncrypt" class="encryptButtons">CRIPTOGRAFAR</button>
+              </form>
+              <div id="encryptGossip"></div>
+            </div>
+            </article>      
+            <article id="decrypt" class="cipher">
+                <div class="form">
+                    <header><h1>DESCRIPTOGRAFAR</h1></header>
+                    <form id="formDecrypt" >
+                        <label for="gossipDecrypt">Fofoca:</label>
+                        <input type="text" id="gossipDecrypt" class="inputGossip" required>
+                        <br>
+                        <label for="displacementNumberEncrypt">Selecione o deslocamento:</label>
+                        <input type="number" value="1" name="displacementNumberDecrypt" id="displacementNumberDecrypt" class="inputDisplacement" max="33" min="1">                        <br>
+                        <button type="submit" id="btnDecrypt" class="encryptButtons">DESCRIPTOGRAFAR</button>
+                    </form>
+                    <div id="decryptGossip"></div>
+                </div>
+            </article>
+          </main>
+          <footer>
+      
+          </footer>
+          <script src="index.js" type="module"></script>
+        </div>
+    </body>
+    </html>
