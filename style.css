@@ -1,0 +1,128 @@
+*{
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.headerContent{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+.image{
+  flex: 1;
+  margin-right: 20px;
+  margin-left: 40px;
+}
+img{
+    width:550px;  
+}
+.text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+h1{
+  display: inline;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+.showButtons{
+  background-color: #BF0426;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 650;
+  width: 160px;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+.showButtons:hover {
+  background-color: #A60321;
+}
+.cipher{
+  clear:both;
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  padding-top: 200px;
+}
+#encrypt{
+  display: none;
+}
+#decrypt{
+  display: none;
+}
+.form{
+  background-color: #BF0426;
+  height: 320px;
+  padding: 20px 0;
+  line-height: 1.5;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.encryptButtons{
+  background-color: white ;
+  color: #BF0426;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 650;
+  margin: 12px 0;
+  width: 210px;
+  font-size: 18px;
+}
+.copyButtons{
+  background-color: white ;
+  color: #BF0426;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 650;
+  margin: 12px 12px;
+  width: 110px;
+  font-size: 18px;
+}
+.inputGossip{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-left: 8px;
+  width: 250px;
+}
+.inputGossip:focus{
+  outline: none;
+  border-color: #DE546E;
+  box-shadow: 0 0 5px #DE546E;
+}
+.inputDisplacement{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-left: 8px;
+  width: 30px;
+  margin-top: 8px;
+}
+.inputDisplacement:focus{
+  outline: none;
+  border-color: #DE546E;
+  box-shadow: 0 0 5px #DE546E;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Cipher</title>
+    </head>
+    <body>
+        <header class="headerContent">
+            <div class="text">
+                <h1>BEM VINDA A FOFOCA SECRETA</h1>
+                <a href="#encrypt" id="btnShowEncrypt" class="showButtons">CRIPTOGRAFAR</a>
+                <br>
+                <a href="#decrypt" class="showButtons" id="btnShowDecrypt">DESCRIPTOGRAFAR</a>
+            </div>
+            <div class="image">
+                <img src="art.png">
+            </div>
+          </header>
+      <div class="container">
+        <main id="root">
+            <article id="encrypt" class="cipher">
+            <div class="form" id="formEncrypt">
+              <header><h1>CRIPTOGRAFAR</h1></header>
+              <form>
+                <label for="gossipEncrypt">Fofoca:</label>
+                <input type="text" id="gossipEncrypt" class="inputGossip" required>
+                <br>
+                <label for="displacementNumberEncrypt">Selecione o deslocamento:</label>
+                <input type="number" value="1" name="displacementNumberEncrypt" id="displacementNumberEncrypt" class="inputDisplacement" max="33" min="1">
+                <br>
+                <button type="submit" id="btnEncrypt" class="encryptButtons">CRIPTOGRAFAR</button>
+              </form>
+              <div id="encryptGossip"></div>
+            </div>
+            </article>      
+            <article id="decrypt" class="cipher">
+                <div class="form">
+                    <header><h1>DESCRIPTOGRAFAR</h1></header>
+                    <form id="formDecrypt" >
+                        <label for="gossipDecrypt">Fofoca:</label>
+                        <input type="text" id="gossipDecrypt" class="inputGossip" required>
+                        <br>
+                        <label for="displacementNumberEncrypt">Selecione o deslocamento:</label>
+                        <input type="number" value="1" name="displacementNumberDecrypt" id="displacementNumberDecrypt" class="inputDisplacement" max="33" min="1">                        <br>
+                        <button type="submit" id="btnDecrypt" class="encryptButtons">DESCRIPTOGRAFAR</button>
+                    </form>
+                    <div id="decryptGossip"></div>
+                </div>
+            </article>
+          </main>
+          <footer>
+      
+          </footer>
+          <script src="index.js" type="module"></script>
+        </div>
+    </body>
+    </html>
